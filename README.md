@@ -58,8 +58,3 @@ Yu Yu Hakusho, its characters, story, artwork, trademarks, and the original game
 Only translation patches and project documentation are distributed here. No original or patched ROM, emulator save state, or contact email is included. Do not sell the patches or bundle them with ROMs. Obtain the original game lawfully and comply with applicable law. Nonprofit distribution is not a claim of copyright authorization or immunity.
 
 Please use GitHub Issues for technical reports or rights-holder concerns.
-
-
-## Screenshots
-
-![title screen](https://raw.githubusercontent.com/blackhowling2020/yu-yu-hakusho-makai-no-tobira-english/main/screenshots/title-screen.png)
