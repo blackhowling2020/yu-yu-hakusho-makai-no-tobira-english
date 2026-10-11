@@ -62,6 +62,4 @@ Please use GitHub Issues for technical reports or rights-holder concerns.
 
 ## Screenshots
 
-Representative emulator previews; both editions share the same translated presentation. The final Sensui image shows the battle scene, not a visual difference between editions.
-
 ![title screen](https://raw.githubusercontent.com/blackhowling2020/yu-yu-hakusho-makai-no-tobira-english/main/screenshots/title-screen.png)
