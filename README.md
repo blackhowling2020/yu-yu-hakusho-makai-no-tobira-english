@@ -69,5 +69,3 @@ Representative emulator previews; both editions share the same translated presen
 ![title screen](https://raw.githubusercontent.com/blackhowling2020/yu-yu-hakusho-makai-no-tobira-english/main/screenshots/title-screen.png)
 
 ![password screen](https://raw.githubusercontent.com/blackhowling2020/yu-yu-hakusho-makai-no-tobira-english/main/screenshots/password-screen.png)
-
-![final sensui](https://raw.githubusercontent.com/blackhowling2020/yu-yu-hakusho-makai-no-tobira-english/main/screenshots/final-sensui.png)
