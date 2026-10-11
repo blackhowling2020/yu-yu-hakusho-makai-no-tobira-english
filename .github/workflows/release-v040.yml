@@ -1,0 +1,43 @@
+name: Publish v0.40
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/release-v040.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify patches and package editions
+        shell: python
+        run: |
+          import hashlib, json, pathlib, zipfile
+          root = pathlib.Path('.')
+          manifest = json.loads((root / 'SHA256.json').read_text())
+          for name, info in manifest.items():
+              data = (root / 'patches' / name).read_bytes()
+              assert hashlib.sha256(data).hexdigest() == info['sha256']
+              assert len(data) == info['bytes']
+          for edition in ['Original-Sensui', 'Adjusted-Sensui']:
+              stem = 'YuYuHakusho-English-Draft-v0.40-' + edition
+              with zipfile.ZipFile(stem + '.zip', 'w', zipfile.ZIP_DEFLATED) as z:
+                  for suffix in ['ips', 'xdelta']:
+                      p = root / 'patches' / (stem + '.' + suffix)
+                      z.write(p, p.name)
+                  for name in ['README.md', 'COPYRIGHT.md', 'RELEASE-NOTES.md', 'SHA256.json']:
+                      z.write(root / name, name)
+              with zipfile.ZipFile(stem + '.zip') as z:
+                  assert z.testzip() is None
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if gh release view v0.40 >/dev/null 2>&1; then
+            echo "Release v0.40 already exists; leaving it unchanged."
+          else
+            gh release create v0.40 --target "$GITHUB_SHA" --title "v0.40 — English translation: original and adjusted Sensui" --notes-file RELEASE-NOTES.md YuYuHakusho-English-Draft-v0.40-Original-Sensui.zip YuYuHakusho-English-Draft-v0.40-Adjusted-Sensui.zip patches/*.ips patches/*.xdelta SHA256.json
+          fi
