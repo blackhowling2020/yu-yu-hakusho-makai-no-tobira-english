@@ -1,4 +1,4 @@
-# Yu Yu Hakusho: Gate to Demon World — English Translation
+# Yu Yu Hakusho: Gate to Demon World — MTL English Translation
 
 An unofficial, free, nonprofit English fan translation for **Yu Yu Hakusho Dai-3-dan - Makai no Tobira Hen (Japan)** on Game Boy.
 
