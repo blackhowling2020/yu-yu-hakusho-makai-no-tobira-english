@@ -47,7 +47,7 @@ This does not claim that every decorative Japanese graphic has been found. Remai
 
 All 190 extracted script control streams were checked. All 154 dialogue-rendering cases passed. Both editions' IPS and xdelta patches were independently decoded and reproduced their target ROMs exactly. Archive integrity was checked. The editions differ only in the final Sensui transition hurtbox and the corresponding ROM checksum.
 
-For the adjusted edition, native collision checks covered 2,240 animation cases; only the intended final Sensui transition pose changed. A native damage check confirmed that the newly hittable pose takes damage with normal recovery. Full end-to-end mGBA playthrough testing remains pending.
+For the adjusted edition, native collision checks covered 2,240 animation cases; only the intended final Sensui transition pose changed. A native damage check confirmed that the newly hittable pose takes damage with normal recovery. Full end-to-end playthrough testing remains pending on this one.
 
 ## Copyright and nonprofit notice
 
