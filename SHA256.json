@@ -1,0 +1,18 @@
+{
+  "YuYuHakusho-English-Draft-v0.40-Adjusted-Sensui.ips": {
+    "sha256": "ffa3ab316554e305bababb25f74e3513a1806812be9cd9e7bd6f715d33105e31",
+    "bytes": 35454
+  },
+  "YuYuHakusho-English-Draft-v0.40-Adjusted-Sensui.xdelta": {
+    "sha256": "f0e99dd1191686d35b6dae365eb2d8cfe8a61d171438761416e21203804c65c5",
+    "bytes": 17296
+  },
+  "YuYuHakusho-English-Draft-v0.40-Original-Sensui.ips": {
+    "sha256": "8d821eb0969b7c403c644f5407555027691c6afad72a4caacd41e97b4c6c1164",
+    "bytes": 35448
+  },
+  "YuYuHakusho-English-Draft-v0.40-Original-Sensui.xdelta": {
+    "sha256": "f3a0c8a0b5ed70f3c4b13bab601076f68c867eef10dca3438a4dc6a80031ac65",
+    "bytes": 17289
+  }
+}

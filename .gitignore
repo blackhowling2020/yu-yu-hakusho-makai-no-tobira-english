@@ -1,0 +1,7 @@
+*.gb
+*.gbc
+*.gba
+*.ss*
+*.state
+*.sav
+.env*
