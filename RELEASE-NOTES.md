@@ -35,3 +35,16 @@ This does not claim that every decorative Japanese graphic has been found. Remai
 
 
 See README for installation, verification, and nonprofit copyright notice.
+
+
+## Screenshots
+
+Representative emulator previews; both editions share the same translated presentation. The final Sensui image shows the battle scene, not a visual difference between editions.
+
+![main menu](https://raw.githubusercontent.com/blackhowling2020/yu-yu-hakusho-makai-no-tobira-english/main/screenshots/main-menu.png)
+
+![title screen](https://raw.githubusercontent.com/blackhowling2020/yu-yu-hakusho-makai-no-tobira-english/main/screenshots/title-screen.png)
+
+![password screen](https://raw.githubusercontent.com/blackhowling2020/yu-yu-hakusho-makai-no-tobira-english/main/screenshots/password-screen.png)
+
+![final sensui](https://raw.githubusercontent.com/blackhowling2020/yu-yu-hakusho-makai-no-tobira-english/main/screenshots/final-sensui.png)

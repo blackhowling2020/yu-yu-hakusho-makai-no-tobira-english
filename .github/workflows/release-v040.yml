@@ -37,7 +37,8 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           if gh release view v0.40 >/dev/null 2>&1; then
-            echo "Release v0.40 already exists; leaving it unchanged."
+            gh release edit v0.40 --notes-file RELEASE-NOTES.md
+            gh release upload v0.40 screenshots/*.png --clobber
           else
             gh release create v0.40 --target "$GITHUB_SHA" --title "v0.40 — English translation: original and adjusted Sensui" --notes-file RELEASE-NOTES.md YuYuHakusho-English-Draft-v0.40-Original-Sensui.zip YuYuHakusho-English-Draft-v0.40-Adjusted-Sensui.zip patches/*.ips patches/*.xdelta SHA256.json
           fi
